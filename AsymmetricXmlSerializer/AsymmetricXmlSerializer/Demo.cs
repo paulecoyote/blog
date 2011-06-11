@@ -1,7 +1,7 @@
-﻿// See Clue class to change demo behaviour.  
-// Uncomment one of the fixes below to observe different behaviours.
+﻿// See Clue class to change demo behavior.  
+// Uncomment one of the fixes below to observe different behaviors.
 // Search for FIX1 or FIX2 to see where the changes have been made.
-//// #define FIX1  // Do *not* use DefaultValue attribute, taken in to account serialising but not de-serialising.
+//// #define FIX1  // Do *not* use DefaultValue attribute, taken in to account serializing but not de-serializing.
 //// #define FIX2  // Set default value of variable to same as DefaultValue attribute during construction.
 
 namespace AsymmetricXmlSerializer
@@ -15,7 +15,7 @@ namespace AsymmetricXmlSerializer
     using System.Xml.Serialization;
 
     /// <summary>
-    /// Class to be serialized and demo point for asymmetric XmlSerializer behaviour.
+    /// Class to be serialized and demo point for asymmetric XmlSerializer behavior.
     /// </summary>
     [Serializable()]
     public class Clue
@@ -35,7 +35,7 @@ namespace AsymmetricXmlSerializer
     }
 
     /// <summary>
-    /// Demo program for asymmetric XmlSerializer behaviour with DefaultValueAttribute.
+    /// Demo program for asymmetric XmlSerializer behavior with DefaultValueAttribute.
     /// </summary>
     internal sealed class Program
     {
@@ -109,7 +109,7 @@ namespace AsymmetricXmlSerializer
  * FIX2: Use DefaultValueAttribute AND default value at construction.
  * 
  * To use DefaultValueAttribute and have the object be recreated 
- * properly when reading it back, you must to explictly set the 
+ * properly when reading it back, you must to explicitly set the 
  * default value during construction of the object being read.
  * Using this method means the xml is concise and the object
  * is accurately recreated.
